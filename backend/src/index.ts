@@ -13,9 +13,11 @@ const PORT = process.env.PORT || 4000;
 app.use(express.json());
 app.use("/api", routes); // phase 2.4.3: add routes to index
 
-app.use(cors({
-  origin: "*"
-}));
+app.use(
+  cors({
+    origin: "*",
+  }),
+);
 
 app.get("/", (_req, res) => {
   res.send("APP RUNNING...");
