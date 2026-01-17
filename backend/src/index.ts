@@ -17,7 +17,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173", // local dev
-      "https://optimum-output-assignment.vercel.app" // prod frontend
+      "http://optimum-output-assignment.vercel.app" // prod frontend
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true
