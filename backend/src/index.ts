@@ -17,11 +17,10 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173", // local dev
-      "https://optimum-output-assignment.vercel.app/products" // prod frontend
+      "https://optimum-output-assignment.vercel.app", // prod frontend
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    credentials: true
-  })
+  }),
 );
 
 app.get("/", (_req, res) => {
