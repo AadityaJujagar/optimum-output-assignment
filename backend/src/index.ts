@@ -14,10 +14,12 @@ app.use(express.json());
 app.use(cors());
 app.use("/api", routes); // phase 2.4.3: add routes to index
 
-app.use(cors({
-  origin: "https://optimum-output-assignment.onrender.com/",
-  methods: ["GET","POST","PUT","DELETE"],
-}));
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
+  }),
+);
 
 app.get("/", (_req, res) => {
   res.send("APP RUNNING...");
