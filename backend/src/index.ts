@@ -10,6 +10,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 4000;
 
+// CORS must come above routes and MWs
 app.use(
   cors({
     origin: [
