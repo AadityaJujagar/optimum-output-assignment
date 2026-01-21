@@ -204,8 +204,7 @@ optimum-output-fullstack-task/
 │   │   ├── index.ts                   # App entry point & server setup
 │   │   ├── routes.ts                  # Route aggregation & registration
 │   │   ├── config/
-│   │   │   ├── db.ts                  # Database client initialization
-│   │   │   └── env.ts                 # Environment configuration
+│   │   │   └── db.ts                  # Database client initialization
 │   │   │
 │   │   └── modules/                   # Feature modules (MVC structure)
 │   │       │
@@ -259,13 +258,10 @@ optimum-output-fullstack-task/
     │   │   ├── OrderProductRow.tsx    # Product row in order
     │   │   └── OrderItemRow.tsx       # Order item display
     │   │
-    │   ├── pages/                     # Page Components (Route-level)
-    │   │   ├── ProductsPage.tsx       # Browse all products
-    │   │   ├── CreateOrderPage.tsx    # Create new order
-    │   │   └── OrderDetailsPage.tsx   # View order details
-    │   │
-    │   └── routes/
-    │       └── AppRoutes.tsx          # Route configuration
+    │   └── pages/                     # Page Components (Route-level)
+    │       ├── ProductsPage.tsx       # Browse all products
+    │       ├── CreateOrderPage.tsx    # Create new order
+    │       └── OrderDetailsPage.tsx   # View order details
     │
     ├── public/                        # Static assets
     ├── dist/                          # Compiled build output
